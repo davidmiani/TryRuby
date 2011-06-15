@@ -1,0 +1,19 @@
+GIT
+  remote: https://github.com/nanothief/fakefs
+  revision: cb63ff262e1ab9dffdda6d20a1b9c90434e97d58
+  specs:
+    fakefs (0.3.2)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    ruby_parser (2.0.6)
+      sexp_processor (~> 3.0)
+    sexp_processor (3.0.5)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  fakefs!
+  ruby_parser

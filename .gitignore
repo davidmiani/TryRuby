@@ -1,6 +1,5 @@
 .DS*
 ._*
-.bundle
-*.lock
 tryruby/log/*
 tmp/*
+bundler_gems
