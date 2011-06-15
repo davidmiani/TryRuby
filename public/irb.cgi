@@ -8,7 +8,6 @@ require 'bundler/setup'
 rescue Exception => e
     warn e.message
 end
-warn "hello"
 require './tryruby.rb'
 require 'cgi'
 require 'cgi/session'
