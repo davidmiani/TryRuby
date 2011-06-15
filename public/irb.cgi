@@ -1,5 +1,14 @@
-#!/usr/local/bin/ruby 
+#!/usr/local/bin/ruby
 
+$LOAD_PATH.unshift(File.dirname(__FILE__))
+
+require 'rubygems'
+begin
+require 'bundler/setup'
+rescue Exception => e
+    warn e.message
+end
+warn "hello"
 require './tryruby.rb'
 require 'cgi'
 require 'cgi/session'
@@ -32,6 +41,7 @@ class TryRubyCGISession# < TryRuby::Session
     define_method(:"#{accessor.to_s}=") { |new_val| @session[accessor.to_s] = new_val }
   end
 end
+
   
 TryRuby.session = TryRubyCGISession.new
 

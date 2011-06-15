@@ -1,7 +1,9 @@
 #$LOAD_PATH.unshift File.join(File.dirname(__FILE__), 'submodules', 'fakefs', 'lib')
+require 'rubygems'
+require 'bundler/setup'
 require './setup.rb'
 require 'ruby_parser'
-require './fakefs/safe'
+require 'fakefs/safe'
 require 'stringio'
 
 module TryRuby
